@@ -11,9 +11,9 @@ ________________________________________________________________
 If you create a new conda environment for this analysis. Please remember to regularly save
 your environment to a file:
 
-conda create --name {{cookiecutter.repo_name}} python=3.11
-conda activate {{cookiecutter.repo_name}}
-conda env export > environment.yml
+mamba create --name {{cookiecutter.repo_name}} python=3.11
+mamba activate {{cookiecutter.repo_name}}
+mamba env export > environment.yml
 
 You can install the python package in this directory to your local conda environment with:
 

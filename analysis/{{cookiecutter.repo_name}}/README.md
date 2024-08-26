@@ -4,8 +4,8 @@
 
 ## How to use
 
-If you create a new conda environment for this analysis. Please remember to regularly save
-your environment to a file:
+If you create a new conda environment for this analysis. Please remember save
+your environment to a file after each change:
 
 `mamba env export > environment.yml`
 

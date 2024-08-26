@@ -1,6 +1,6 @@
 {
     "project_name": "analysis_name",
-    "repo_name": "{{ cookiecutter.analysis_name.lower().replace(' ', '_') }}",
+    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "package_name": "src",
     "description": "ToDo: Write analysis description"
 }

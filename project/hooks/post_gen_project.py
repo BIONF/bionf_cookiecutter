@@ -1,42 +1,27 @@
 help = """
 Your project has been created!
-_____________________________________________________________________________
-                            ___________ _
-  \/                    __/   .::::.-'-(/-/)
-                     _/:  .::::.-' .-'\/\_`*******            __ (_))
-        \/          /:  .::::./   -._-.  d\|                 (_))_(__))
-                     /: ("'"'/    '.  (__/||             (_))__(_))--(__))
-                      \::).-'  -._  \/ \\/\|
-              __ _ .-'`)/  '-'. . '. |  (i_O
-          .-'      \       -'      '\|
-     _ _./      .-'|       '.  (    \\                           % % %
-  .-'   :      '_  \         '-'\  /|/      @ @ @               % % % %
- /      )\_      '- )_________.-|_/^\      @ @ @@@             % %\/% %
- (   .-'   )-._-:  /        \(/\'-._ `.     @|@@@@@              ..|........
-  (   )  _//_/|:  /          `\()   `\_\     |/_@@               )'-._.-._.-
-   ( (   \()^_/)_/             )/      \\    /                  /   /
-    )  _.-\\.\(_)__._.-'-.-'-.//_.-'-.-.)\-'/._                /       
-.-.-.-'   _o\ \\\     '::'   (o_ '-.-' |__\'-.-;~ ~ ~ ~ ~ ~ ~~/   /\   
-          \ /  \\\__          )_\    .:::::::.-'\            '- - -|
-     :::''':::::^)__\:::::::::::::::::'''''''-.  \                  '- - - - 
-    :::::::  '''''''''''   ''''''''''''':::. -'\  \       C. SWANSIGER
-_____':::::_____________________________________\__\_________________________
+________________________________________________________________
+    _    _  _______   ____ ___ ___  _   _ _____ 
+   / \  | |/ / ____| | __ )_ _/ _ \| \ | |  ___|
+  / _ \ | ' /|  _|   |  _ \| | | | |  \| | |_   
+ / ___ \| . \| |___  | |_) | | |_| | |\  |  _|  
+/_/   \_\_|\_\_____| |____/___\___/|_| \_|_|    
+________________________________________________________________
+You can now create a workspace for each of your analyses using:
 
-If you have not done so already, create a conda environment for your new 
-project with:
+cd {{cookiecutter.repo_name}}/analyses
+cookiecutter bionf_cookiecutter --directory="analysis"
 
-cd {{cookiecutter.repo_name}}
-conda create --name {{cookiecutter.repo_name}} python=3.11
-conda activate {{cookiecutter.repo_name}}
-conda env export > environment.yml
+As soon as an analysis generated a "milestone", 
+i.e. figures, tables, or files that will be used in other analyses
+save them in the milestones/ directory of the project.
 
-Install your new project in your local conda environment with:
+Once you are finished with an analysis, 
+add corresponding rules to the snakemake file of the project.
 
-pip install -e .
+Don't forget to sync this project to GitHub. 
 
-You will need to manually add data to .gitignore to prevent it from syncing to
-version control.
 
-Don't forget to sync to GitHub. Have fun!
+Good Luck!
 """
 print(help)

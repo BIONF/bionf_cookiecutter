@@ -2,7 +2,7 @@
 
 {{cookiecutter.description}}
 
-## How to use
+## Custom Environments
 
 If you create a new conda environment for this analysis. Please remember save
 your environment to a file after each change:

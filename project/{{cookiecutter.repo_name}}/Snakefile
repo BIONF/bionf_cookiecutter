@@ -1,0 +1,15 @@
+from snakemake.utils import min_version
+min_version("6.0")
+
+# just a placeholder example for your first module
+module example:
+    snakefile:
+        "analyses/{{cookiecutter.repo_name}}/{{cookiecutter.snakemake_name}}"
+use rule * from rnaseq as example_*
+
+
+rule all:
+    input:
+        # target rule for the example module module (expects an "all" rule in the module snakefile)
+        rules.example_all.input,
+    default_target: True

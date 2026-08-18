@@ -1,7 +1,8 @@
 """Post-generation hook.
 
 Runs inside the freshly generated project directory. Cookiecutter renders
-this file first, so ``{{ cookiecutter.* }}`` values are available as literals.
+this script as a Jinja template before executing it, so cookiecutter values
+are substituted in as literals below.
 """
 from __future__ import annotations
 

@@ -12,6 +12,11 @@ Afterwards, you can create a workspace for each analysis in the analyses directo
 cookiecutter gh:BIONF/bionf_cookiecutter --directory="analysis"
 ```
 
+Create python packages using:
+```
+cookiecutter gh:BIONF/bionf_cookiecutter --directory="package"
+```
+
 ## Acknowledgments
 
 Based on the [true neutral cookiecutter](https://github.com/patrickmineault/true-neutral-cookiecutter) of the [Good Research Code Handbook](https://goodresearch.dev/) by Patrick Mineault.

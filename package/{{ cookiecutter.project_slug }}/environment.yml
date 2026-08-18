@@ -1,0 +1,12 @@
+name: {{ cookiecutter.package_name }}
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python{{ cookiecutter.python_requires }}
+  - pip
+  # Editable install of this package plus its dev extras (pytest, ruff),
+  # keeping pyproject.toml as the single source of truth for dependencies.
+  - pip:
+      - -e ".[dev]"

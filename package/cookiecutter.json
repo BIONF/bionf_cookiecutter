@@ -1,0 +1,13 @@
+{
+    "project_name": "My Package",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
+    "package_name": "{{ cookiecutter.project_slug.lower().replace('-', '_') }}",
+    "project_short_description": "A simple Python package.",
+    "version": "0.1.0",
+    "full_name": "Your Name",
+    "email": "you@example.com",
+    "github_username": "yourusername",
+    "python_requires": ">=3.9",
+    "license": ["MIT", "BSD-3-Clause", "Apache-2.0", "None"],
+    "_copy_without_render": [".github/workflows/*.yml"]
+}
